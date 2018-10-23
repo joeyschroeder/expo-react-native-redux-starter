@@ -5,6 +5,7 @@
   "extends": [
     "airbnb",
     "eslint:recommended",
+    "plugin:prettier/recommended",
     "plugin:react-native/all",
     "plugin:react/recommended"
   ],
