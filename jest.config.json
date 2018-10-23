@@ -1,0 +1,19 @@
+{
+  "collectCoverageFrom": [
+    "<rootDir>/src/**/*.js"
+  ],
+  "coverageReporters": [
+    "lcov",
+    "text"
+  ],
+  "preset": "jest-expo",
+  "testMatch": [
+    "<rootDir>/src/**/?(*.)+(test).js"
+  ],
+  "testPathIgnorePatterns": [
+    "<rootDir>/node_modules/"
+  ],
+  "transform": {
+    "^.+\\.js$": "babel-jest"
+  }
+}
