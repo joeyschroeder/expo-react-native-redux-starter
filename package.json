@@ -6,7 +6,9 @@
     "eject": "expo eject",
     "start": "expo start",
     "start:android": "expo start --android",
-    "start:ios": "expo start --ios"
+    "start:ios": "expo start --ios",
+    "eslint": "./node_modules/.bin/eslint src/ && echo \"\\x1b[102m\\x1b[1m ESLINT \\x1b[0m\" No JavaScript ESLint errors to fix",
+    "eslint:fix": "./node_modules/.bin/eslint --fix src/ && echo \"\\x1b[102m\\x1b[1m ESLINT \\x1b[0m\" ESLint JavaScript errors fixed"
   },
   "author": {
     "name": "Joey Schroeder",

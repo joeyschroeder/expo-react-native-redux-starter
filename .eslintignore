@@ -1,3 +1,4 @@
-.expo/*
-node_modules/**/*
+.expo/
+assets/
+node_modules/
 npm-debug.*
