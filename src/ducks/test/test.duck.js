@@ -6,14 +6,15 @@ const RESET = 'test/RESET';
 export const updateTestData = createAction(UPDATE);
 export const resetTestData = createAction(RESET);
 
-const DEFAULT_STATE = {
-  data: 0
+export const DEFAULT_STATE = {
+  data: 0,
+  additionalState: 'test'
 };
 
 export const testDuck = handleActions(
   {
-    [UPDATE]: state => Object.assign({}, state, { isRequesting: false }),
-    [RESET]: state => Object.assign({}, state, { isRequesting: true })
+    [UPDATE]: state => Object.assign({}, state, { data: state.data + 1 }),
+    [RESET]: () => DEFAULT_STATE
   },
   DEFAULT_STATE
 );
