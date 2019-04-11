@@ -18,5 +18,5 @@ export const sampleReducer = handleActions(
   DEFAULT_STATE
 );
 
-export const selectSample = state => state.sample || {};
-export const selectSampleData = state => selectSample(state).data || null;
+export const selectSample = state => state.sample || DEFAULT_STATE;
+export const selectSampleData = state => selectSample(state).data || DEFAULT_STATE.data;
