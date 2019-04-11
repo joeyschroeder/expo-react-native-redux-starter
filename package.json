@@ -3,12 +3,12 @@
   "description": "A React-Native starter application including Expo, Redux and more!",
   "main": "src/index.js",
   "scripts": {
-    "eject": "expo eject",
+    "eject": "./node_modules/.bin/expo eject",
     "eslint": "./node_modules/.bin/eslint src/ && echo \"\\x1b[102m\\x1b[1m ESLINT \\x1b[0m\" No JavaScript ESLint errors to fix",
     "eslint:fix": "./node_modules/.bin/eslint --fix src/ && echo \"\\x1b[102m\\x1b[1m ESLINT \\x1b[0m\" ESLint JavaScript errors fixed",
-    "start": "expo start",
-    "start:android": "expo start --android",
-    "start:ios": "expo start --ios",
+    "start": "./node_modules/.bin/expo start",
+    "start:android": "./node_modules/.bin/expo start --android",
+    "start:ios": "./node_modules/.bin/expo start --ios",
     "test": "./node_modules/.bin/jest --config ./jest.config.json",
     "test:coverage": "./node_modules/.bin/jest --config ./jest.config.json --coverage"
   },
