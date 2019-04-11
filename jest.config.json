@@ -8,6 +8,7 @@
     "text"
   ],
   "preset": "jest-expo",
+  "reporters": ["jest-dot-reporter"],
   "testMatch": [
     "<rootDir>/src/**/?(*.)+(test).js"
   ],

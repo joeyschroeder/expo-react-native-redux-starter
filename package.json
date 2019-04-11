@@ -44,6 +44,7 @@
     "eslint-plugin-react": "^7.12.4",
     "eslint-plugin-react-native": "^3.6.0",
     "jest-cli": "^24.7.1",
+    "jest-dot-reporter": "^1.0.7",
     "jest-expo": "^32.0.0",
     "prettier": "^1.16.4",
     "react-test-renderer": "16.5.0"
