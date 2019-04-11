@@ -1,4 +1,4 @@
-import Expo, { AppLoading } from 'expo';
+import { AppLoading, registerRootComponent } from 'expo';
 import React, { Component } from 'react';
 
 import { App } from './components/app/app';
@@ -27,4 +27,4 @@ export class Main extends Component {
   }
 }
 
-Expo.registerRootComponent(Main);
+registerRootComponent(Main);
