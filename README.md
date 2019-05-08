@@ -1,6 +1,7 @@
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg)]()
 [![GitHub issues](https://img.shields.io/github/issues/joeyschroeder/expo-react-native-redux-starter.svg)](https://github.com/joeyschroeder/expo-react-native-redux-starter/issues)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
+[![tested with jest](https://img.shields.io/badge/tested_with-jest-99424f.svg)](https://github.com/facebook/jest)
 
 # 🌈  Expo React-Native Redux Starter
 A [React-Native](https://facebook.github.io/react-native/) starter application including [Expo](https://expo.io/), [Redux](https://redux.js.org/) and more!
