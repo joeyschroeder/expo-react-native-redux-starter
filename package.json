@@ -23,9 +23,9 @@
     "url": "https://github.com/joeyschroeder/expo-react-native-redux-starter.git"
   },
   "dependencies": {
-    "expo": "^32.0.6",
-    "react": "16.5.0",
-    "react-native": "https://github.com/expo/react-native/archive/sdk-32.0.0.tar.gz",
+    "expo": "^33.0.6",
+    "react": "16.8.3",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-33.0.0.tar.gz",
     "react-redux": "^7.0.1",
     "redux": "^4.0.1",
     "redux-actions": "^2.6.5",
@@ -43,6 +43,7 @@
     "eslint-plugin-prettier": "^3.0.1",
     "eslint-plugin-react": "^7.12.4",
     "eslint-plugin-react-native": "^3.6.0",
+    "expo-cli": "^2.20.1",
     "jest-cli": "^24.7.1",
     "jest-dot-reporter": "^1.0.7",
     "jest-expo": "^32.0.0",
