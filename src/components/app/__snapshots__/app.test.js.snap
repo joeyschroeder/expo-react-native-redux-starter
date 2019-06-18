@@ -10,11 +10,7 @@ exports[`<App /> should render correctly 1`] = `
     }
   }
 >
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-  >
+  <Text>
     Open up App.js to start working on your app!
   </Text>
 </View>

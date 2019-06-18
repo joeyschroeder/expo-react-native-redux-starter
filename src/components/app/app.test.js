@@ -1,4 +1,4 @@
-import { App } from './app.component';
+import { App } from './app';
 import React from 'react';
 import { create } from 'react-test-renderer';
 

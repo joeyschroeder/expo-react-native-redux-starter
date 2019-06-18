@@ -8,6 +8,7 @@
     "text"
   ],
   "preset": "jest-expo",
+  "reporters": ["jest-dot-reporter"],
   "testMatch": [
     "<rootDir>/src/**/?(*.)+(test).js"
   ],
@@ -15,6 +16,6 @@
     "<rootDir>/node_modules/"
   ],
   "transform": {
-    "^.+\\.js$": "babel-jest"
+    "\\.js$": "<rootDir>/node_modules/react-native/jest/preprocessor.js"
   }
 }

@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux';
-import { testDuck } from './test/test.duck';
+import { sampleReducer } from './sample/sample';
 
 export const reducers = combineReducers({
-  test: testDuck
+  sample: sampleReducer
 });

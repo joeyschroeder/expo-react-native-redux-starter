@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`sampleReducer resetSampleData should reset data 1`] = `
+Object {
+  "data": 0,
+}
+`;
+
+exports[`sampleReducer updateSampleData should add one to data 1`] = `
+Object {
+  "data": 1,
+}
+`;
