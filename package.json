@@ -7,11 +7,11 @@
     "eslint": "./node_modules/.bin/eslint src/ && echo \"\\x1b[102m\\x1b[1m ESLINT \\x1b[0m\" No JavaScript ESLint errors to fix",
     "eslint:fix": "./node_modules/.bin/eslint --fix src/ && echo \"\\x1b[102m\\x1b[1m ESLINT \\x1b[0m\" ESLint JavaScript errors fixed",
     "start": "./node_modules/.bin/expo start",
-    "start:android": "./node_modules/.bin/expo start --android",
-    "start:ios": "./node_modules/.bin/expo start --ios",
-    "start:web": "./node_modules/.bin/expo start --web",
+    "start:android": "npm run start -- --android",
+    "start:ios": "npm run start -- --ios",
+    "start:web": "npm run start -- --web",
     "test": "./node_modules/.bin/jest --config ./jest.config.json",
-    "test:coverage": "./node_modules/.bin/jest --config ./jest.config.json --coverage"
+    "test:coverage": "npm run test -- --coverage"
   },
   "author": {
     "name": "Joey Schroeder",
