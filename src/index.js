@@ -8,7 +8,10 @@ import { configureStore } from './util/configure-store/configure-store';
 const store = configureStore();
 
 export class Main extends Component {
-  state = { appReady: false };
+  constructor(props) {
+    super(props);
+    this.state = { appReady: false };
+  }
 
   componentDidMount() {
     this.setState({ appReady: true });
