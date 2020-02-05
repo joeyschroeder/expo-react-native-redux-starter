@@ -1,4 +1,15 @@
+*.jks
+*.key
+*.mobileprovision
+*.orig.*
+*.p12
+*.p8
 .expo/*
 coverage/
 node_modules/**/*
 npm-debug.*
+web-build/
+web-report/
+
+# macOS
+.DS_Store

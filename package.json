@@ -9,6 +9,7 @@
     "start": "./node_modules/.bin/expo start",
     "start:android": "./node_modules/.bin/expo start --android",
     "start:ios": "./node_modules/.bin/expo start --ios",
+    "start:web": "./node_modules/.bin/expo start --web",
     "test": "./node_modules/.bin/jest --config ./jest.config.json",
     "test:coverage": "./node_modules/.bin/jest --config ./jest.config.json --coverage"
   },
@@ -23,17 +24,20 @@
     "url": "https://github.com/joeyschroeder/expo-react-native-redux-starter.git"
   },
   "dependencies": {
-    "expo": "^33.0.6",
-    "react": "16.8.3",
-    "react-native": "https://github.com/expo/react-native/archive/sdk-33.0.0.tar.gz",
+    "expo": "~36.0.0",
+    "react": "~16.9.0",
+    "react-dom": "~16.9.0",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-36.0.0.tar.gz",
+    "react-native-web": "~0.11.7",
     "react-redux": "^7.0.1",
     "redux": "^4.0.1",
     "redux-actions": "^2.6.5",
     "redux-thunk": "^2.3.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.0.0",
     "babel-eslint": "^10.0.1",
-    "babel-preset-expo": "^5.1.1",
+    "babel-preset-expo": "~8.0.0",
     "eslint": "^5.16.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-config-prettier": "^5.0.0",
@@ -43,11 +47,13 @@
     "eslint-plugin-prettier": "^3.0.1",
     "eslint-plugin-react": "^7.12.4",
     "eslint-plugin-react-native": "^3.6.0",
-    "expo-cli": "^2.20.1",
-    "jest-cli": "^24.7.1",
-    "jest-dot-reporter": "^1.0.7",
-    "jest-expo": "^33.0.2",
+    "expo-cli": "^3.11.9",
+    "jest": "^25.1.0",
+    "jest-cli": "^25.1.0",
+    "jest-dot-reporter": "^1.0.14",
+    "jest-expo": "^36.0.1",
     "prettier": "^1.16.4",
-    "react-test-renderer": "16.8.6"
-  }
+    "react-test-renderer": "^16.12.0"
+  },
+  "private": true
 }
