@@ -1,3 +1,4 @@
+/* eslint-disable no-import-assign */
 import { configureStore } from './configure-store';
 import * as reduxModule from 'redux';
 import * as reducersModule from '../../store/index';
