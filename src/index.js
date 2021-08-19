@@ -1,5 +1,6 @@
-import { AppLoading, registerRootComponent } from 'expo';
+import { registerRootComponent } from 'expo';
 import React, { Component } from 'react';
+import AppLoading from 'expo-app-loading';
 
 import { App } from './components/app/app';
 import { Provider } from 'react-redux';
