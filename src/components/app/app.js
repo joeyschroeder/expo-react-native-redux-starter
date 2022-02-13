@@ -10,10 +10,10 @@ const styles = StyleSheet.create({
   },
 });
 
-export const App = () => {
+export function App() {
   return (
     <View style={styles.container}>
       <Text>Open up app.js to start working on your app!</Text>
     </View>
   );
-};
+}
