@@ -1,34 +1,46 @@
 import { registerRootComponent } from 'expo';
-import React, { Component } from 'react';
-import AppLoading from 'expo-app-loading';
-
+import React, { useState, useEffect, useCallback } from 'react';
 import { App } from './components/app/app';
 import { Provider } from 'react-redux';
 import { configureStore } from './util/configure-store/configure-store';
+import * as SplashScreen from 'expo-splash-screen';
 
 const store = configureStore();
 
-export class Main extends Component {
-  constructor(props) {
-    super(props);
-    this.state = { appReady: false };
-  }
+// Makes the native splash screen remain visible until hideAsync is called.
+SplashScreen.preventAutoHideAsync();
 
-  componentDidMount() {
-    this.setState({ appReady: true });
-  }
+export function Main() {
+  const [appReady, setAppReady] = useState(false);
 
-  render() {
-    const { appReady } = this.state;
+  useEffect(() => {
+    async function loadAssets() {
+      // Load any fonts, images, assets, and/or make any asynchronous requests
+      // before the Splash Screen is hidden
+      setAppReady(true);
+    }
 
-    if (!appReady) return <AppLoading />;
+    loadAssets();
+  }, []);
 
-    return (
-      <Provider store={store}>
-        <App />
-      </Provider>
-    );
-  }
+  const onLayout = useCallback(async () => {
+    if (appReady) {
+      // This tells the splash screen to hide immediately! If we call this after
+      // `setAppIsReady`, then we may see a blank screen while the app is
+      // loading its initial state and rendering its first pixels. So instead,
+      // we hide the splash screen once we know the root view has already
+      // performed layout.
+      await SplashScreen.hideAsync();
+    }
+  }, [appReady]);
+
+  if (!appReady) return null;
+
+  return (
+    <Provider store={store}>
+      <App onLayout={onLayout} />
+    </Provider>
+  );
 }
 
 registerRootComponent(Main);

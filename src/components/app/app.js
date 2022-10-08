@@ -1,5 +1,5 @@
 import { StyleSheet, Text, View } from 'react-native';
-
+import PropTypes from 'prop-types';
 import React from 'react';
 
 const styles = StyleSheet.create({
@@ -10,10 +10,19 @@ const styles = StyleSheet.create({
   },
 });
 
-export function App() {
+export function App(props) {
+  const { onLayout } = props;
   return (
-    <View style={styles.container}>
+    <View style={styles.container} onLayout={onLayout}>
       <Text>Open up app.js to start working on your app!</Text>
     </View>
   );
 }
+
+App.propTypes = {
+  onLayout: PropTypes.func,
+};
+
+App.defaultProps = {
+  onLayout: undefined,
+};
