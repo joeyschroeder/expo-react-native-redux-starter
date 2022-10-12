@@ -9,6 +9,7 @@
     "start": "./node_modules/.bin/expo start --clear",
     "start:android": "npm run start -- --android",
     "start:ios": "npm run start -- --ios",
+    "start:tunnel": "npm run start -- --tunnel",
     "start:web": "npm run start -- --web",
     "test": "./node_modules/.bin/jest --config ./jest.config.json",
     "test:coverage": "npm run test -- --coverage"
@@ -39,6 +40,7 @@
   "devDependencies": {
     "@babel/core": "^7.19.3",
     "@babel/eslint-parser": "^7.19.1",
+    "@expo/ngrok": "^4.1.0",
     "babel-preset-expo": "~9.2.0",
     "eslint": "^8.24.0",
     "eslint-config-airbnb": "^19.0.4",
