@@ -1,29 +1,51 @@
-import { reducers } from '..';
 import {
-  updateSampleData,
-  selectSampleData,
-  DEFAULT_STATE,
+  INITIAL_STATE,
+  NAME,
   resetSampleData,
+  sampleReducer,
+  selectSample,
+  selectSampleData,
+  updateSampleData,
 } from './sample';
 
 describe('sampleReducer', () => {
   describe('updateSampleData', () => {
     const action = updateSampleData();
-    const state = reducers({}, action);
-    const result = selectSampleData(state);
+    const { data } = sampleReducer(INITIAL_STATE, action);
 
-    it('should update state.sample.data by 1', () => {
-      expect(result).toEqual(DEFAULT_STATE.data + 1);
+    it('should update state.data by 1', () => {
+      expect(data).toEqual(INITIAL_STATE.data + 1);
     });
   });
 
   describe('resetSampleData', () => {
     const action = resetSampleData();
-    const state = reducers({ sample: { data: 1 } }, action);
-    const result = selectSampleData(state);
+    const { data } = sampleReducer({ data: 1 }, action);
 
-    it('should reset state.sample.data to DEFAULT_STATE.data', () => {
-      expect(result).toEqual(DEFAULT_STATE.data);
+    it('should reset state.data to DEFAULT_STATE.data', () => {
+      expect(data).toEqual(INITIAL_STATE.data);
+    });
+  });
+
+  describe('selectSample', () => {
+    it('should return state', () => {
+      const value = 1;
+      const state = { [NAME]: value };
+      const result = selectSample(state);
+
+      expect(result).toEqual(value);
+    });
+  });
+
+  describe('selectSampleData', () => {
+    it('should return state.data', () => {
+      const data = 1;
+      const value = { data };
+      const state = { [NAME]: value };
+
+      const result = selectSampleData(state);
+
+      expect(result).toEqual(data);
     });
   });
 });

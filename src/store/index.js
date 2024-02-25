@@ -1,6 +1,8 @@
-import { combineReducers } from 'redux';
-import { sampleReducer, REDUCER_PREFIX as SAMPLE } from './sample/sample';
+import { configureStore } from '@reduxjs/toolkit';
+import { sampleReducer, NAME as SAMPLE } from './sample/sample';
 
-export const reducers = combineReducers({
-  [SAMPLE]: sampleReducer,
+export const STORE = configureStore({
+  reducer: {
+    [SAMPLE]: sampleReducer,
+  },
 });
