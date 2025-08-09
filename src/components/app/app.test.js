@@ -1,10 +1,11 @@
+import { render, screen } from '@testing-library/react-native';
 import { App } from './app';
-import React from 'react';
-import { create } from 'react-test-renderer';
 
 describe('<App />', () => {
   it('should render correctly', () => {
-    const component = create(<App />).toJSON();
+    render(<App />);
+
+    const component = screen.toJSON();
     expect(component).toMatchSnapshot();
   });
 });

@@ -12,7 +12,7 @@ export function App(props) {
   const { onLayout } = props;
 
   return (
-    <View style={styles.container} onLayout={onLayout}>
+    <View onLayout={onLayout} style={styles.container}>
       <Text>Open up app.js to start working on your app!</Text>
     </View>
   );
