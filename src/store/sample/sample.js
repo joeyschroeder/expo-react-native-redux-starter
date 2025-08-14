@@ -24,7 +24,7 @@ const { actions, reducer } = sampleSlice;
 export { reducer as sampleReducer };
 
 // actions
-export const { updateSampleData, resetSampleData } = actions;
+export const { resetSampleData, updateSampleData } = actions;
 
 // selectors
 export const selectSample = (state) => state[NAME] || INITIAL_STATE;

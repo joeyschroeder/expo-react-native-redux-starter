@@ -1,0 +1,4 @@
+// This file is not being used by ESLint, but it is included here to
+// fix a bug with "eslint-plugin-import"
+
+// https://github.com/import-js/eslint-plugin-import/issues/3079

@@ -1,13 +1,15 @@
 import { registerRootComponent } from 'expo';
-import React, { useState, useEffect, useCallback } from 'react';
-import { App } from './components/app/app';
-import { Provider } from 'react-redux';
 import * as SplashScreen from 'expo-splash-screen';
+import { useCallback, useEffect, useState } from 'react';
+import { Provider } from 'react-redux';
+
+import { App } from './components/app/app';
 import { STORE } from './store';
 
 // Makes the native splash screen remain visible until hideAsync is called.
 SplashScreen.preventAutoHideAsync();
 
+// eslint-disable-next-line import/no-unused-modules
 export function Main() {
   const [appReady, setAppReady] = useState(false);
 
